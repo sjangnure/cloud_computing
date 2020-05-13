@@ -23,6 +23,6 @@ LambdaFunction:
        - arn:aws:lambda:us-east-1:770693421928:layer:Klayers-python38-elasticsearch:4
       Code:
         S3Bucket: voicecontrolledsearchb2
-        S3Key:code_pipeline.zip
+        S3Key: code_pipeline.zip
       Timeout: 60
       Runtime: python3.8
