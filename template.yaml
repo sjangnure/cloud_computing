@@ -9,7 +9,7 @@ LambdaDescription:
     Description: "Description for this function"
     Type: "String"
 LambdaRole:
-    Description: "Role for this function"
+    Description: "Role for this function" 
     Type: "String"
 Resources:
 LambdaFunction:
