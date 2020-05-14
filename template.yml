@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: LF0.lambda_handler
       Runtime: python3.7
-      CodeUri: ./
+      CodeUri: s3://hw3-static-website/LF0.zip
       Events:
         MyTimeApi:
           Type: Api
