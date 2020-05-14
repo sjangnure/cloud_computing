@@ -5,10 +5,8 @@ phases:
         python: 3.7
   build:
     commands:
-      - ls 
-      - ls ../
       - export BUCKET=hw3-static-website
-      - aws cloudformation package --template-file template.yaml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+      - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
   type: zip
   files:
