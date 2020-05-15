@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     #print(response.message)
     inputText=event["message"]
     return {
-        'statusCode': 200,
+        'statusCode': 300,
         'body': response#"Inside Lambda1" + inputText#response
     } 
     
