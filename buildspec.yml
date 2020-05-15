@@ -7,7 +7,7 @@ phases:
     commands:
       - export BUCKET=hw3-static-website
       - aws s3 cp LF0.zip s3://voicecontrolledsearchb2/LF0.zip
-#       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+##       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
 artifacts:
   type: zip
   files:
