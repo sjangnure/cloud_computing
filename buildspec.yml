@@ -6,10 +6,9 @@ phases:
   build:
     commands:
       - export BUCKET=hw3-static-website
-      - aws s3 cp LF0.zip s3://voicecontrolledsearchb2/LF0.zip
-##       - aws cloudformation package --template-file template.yml --s3-bucket $BUCKET --output-template-file outputtemplate.yml
+#       - aws s3 cp LF0.zip s3://voicecontrolledsearchb2/LF0.zip
+      - aws cloudformation package --template-file lambda_function_serverless.yaml --s3-bucket $BUCKET --output-template-file lambda_function_serverless.yaml
 artifacts:
   type: zip
   files:
-    - template.yml
-    - outputtemplate.yml
+    - lambda_function_serverless.yaml
